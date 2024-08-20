@@ -1,0 +1,9 @@
+baseURL = "https://johnpearsall.com"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+title = "JP: Technologist, Pragmatist, Dreamer"
+
+[deployment]
+[[deployment.targets]]
+name = "production"
+URL = "s3://jpcom-website?region=us-west-2"

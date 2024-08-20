@@ -14,10 +14,9 @@ terraform {
     key            = "state/jpcom-website/terraform.tfstate"
     encrypt        = true
     dynamodb_table = "jpcom-tf-state-lock"
-    profile        = "jpearsall"
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region  = "us-west-2"
 }
