@@ -1,12 +1,12 @@
 ########################################
-# production resources
+# staging resources
 ########################################
 
-module "s3-bucket_johnpearsall-com" {
+module "s3-bucket_staging-johnpearsall-com" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "4.1.2"
 
-  bucket                   = "johnpearsall.com"
+  bucket                   = "staging.johnpearsall.com"
   acl                      = "private"
   control_object_ownership = true
   object_ownership         = "ObjectWriter"
@@ -20,56 +20,46 @@ module "s3-bucket_johnpearsall-com" {
   }
 
   policy = jsonencode(
-      {
-          Statement = [
-              {
-                  Action    = "s3:GetObject"
-                  Effect    = "Allow"
-                  Principal = "*"
-                  Resource  = "arn:aws:s3:::johnpearsall.com/*"
-                  Sid       = "PublicReadGetObject"
-              },
-          ]
-          Version   = "2012-10-17"
-      }
+    {
+      Statement = [
+        {
+          Action    = "s3:GetObject"
+          Effect    = "Allow"
+          Principal = "*"
+          Resource  = "arn:aws:s3:::staging.johnpearsall.com/*"
+          Sid       = "PublicReadGetObject"
+        },
+      ]
+      Version   = "2012-10-17"
+    }
   )
 
   server_side_encryption_configuration = {
-      rule = {
-          bucket_key_enabled = true
+    rule = {
+      bucket_key_enabled = true
 
-          apply_server_side_encryption_by_default = {
-              kms_master_key_id = null
-              sse_algorithm     = "AES256"
-          }
+      apply_server_side_encryption_by_default = {
+        kms_master_key_id = null
+        sse_algorithm     = "AES256"
       }
+    }
   }
 
   website = {
-      error_document           = "404.html"
-      index_document           = "index.html"
+    error_document           = "404.html"
+    index_document           = "index.html"
   }
 }
 
-module "s3-bucket_www-johnpearsall-com" {
-  source  = "terraform-aws-modules/s3-bucket/aws"
-  version = "4.1.2"
-
-  bucket                   = "www.johnpearsall.com"
-  acl                      = "private"
-  control_object_ownership = true
-  object_ownership         = "ObjectWriter"
-}
-
-module "cf-johnpearsall-com" {
+module "cf-staging-johnpearsall-com" {
   source  = "terraform-aws-modules/cloudfront/aws"
   version = "3.4.0"
 
-  aliases = ["www.johnpearsall.com", "johnpearsall.com"]
+  aliases = ["staging.johnpearsall.com"]
 
   origin = {
     blog = {
-      domain_name = "${module.s3-bucket_johnpearsall-com.s3_bucket_id}.${module.s3-bucket_johnpearsall-com.s3_bucket_website_domain}"
+      domain_name = "${module.s3-bucket_staging-johnpearsall-com.s3_bucket_id}.${module.s3-bucket_staging-johnpearsall-com.s3_bucket_website_domain}"
 
       custom_origin_config = {
         http_port = 80
