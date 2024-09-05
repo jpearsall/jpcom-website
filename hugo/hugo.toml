@@ -53,3 +53,6 @@ title = "Greetings from Cyberspace!"
 [[deployment.targets]]
 name = "production"
 URL = "s3://johnpearsall.com?region=us-west-2"
+[[deployment.targets]]
+name = "staging"
+URL = "s3://staging.johnpearsall.com?region=us-west-2"
