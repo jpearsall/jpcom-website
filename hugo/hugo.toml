@@ -1,9 +1,49 @@
 baseURL = "https://johnpearsall.com"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-title = "JP: Technologist, Pragmatist, Dreamer"
+title = "Greetings from Cyberspace!"
+
+[params]
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  homeSubtitle = "Technologist. Pragmatist. Dreamer."
+  disableReadOtherPosts = false
+  enableSharingButtons = true
+  enableGlobalLanguageMenu = true
+  enableThemeToggle = true
+
+  description = "Personal and professional insights and anecdotes."
+  keywords = "homepage, blog"
+  images = [""]
+
+[params.author]
+  name = "John Pearsall"
+
+[params.footer]
+  trademark = 2024
+  rss = true
+  author = true
+
+  topText = []
+  bottomText = [
+    "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+    "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+  ]
+
+[taxonomies]
+  category = "blog"
+  tag = "tags"
+  series = "series"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  url = "/posts"
 
 [deployment]
 [[deployment.targets]]
 name = "production"
-URL = "s3://jpcom-website?region=us-west-2"
+URL = "s3://johnpearsall.com?region=us-west-2"

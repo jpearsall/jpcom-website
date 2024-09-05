@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Untagged on JP: Technologist, Pragmatist, Dreamer</title>
+    <link>http://localhost:1313/tags/untagged/</link>
+    <description>Recent content in Untagged on JP: Technologist, Pragmatist, Dreamer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2024 15:19:26 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ff Gateway to Adulthood</title>
+      <link>http://localhost:1313/posts/ff-gateway-to-adulthood/</link>
+      <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
+      <guid>http://localhost:1313/posts/ff-gateway-to-adulthood/</guid>
+      <description>+++ title = &amp;lsquo;fRetro Friday: Gateway to Adulthood&amp;rsquo; date = &amp;lsquo;2024-08-02T23:59:59-06:00&amp;rsquo; draft = true +++&#xA;Introduction In an effort to put some guardrails around my hobbies, I have decided to dedicate Friday to working on a retrocomputing project. In this case, I had picked up a Gateway PC of similar build to the one I had in High School.</description>
+    </item>
+  </channel>
+</rss>

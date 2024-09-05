@@ -1,0 +1,104 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Greetings from Cyberspace!</title>
+        <link>https://johnpearsall.com/posts/</link>
+        <description>Recent content in Posts on Greetings from Cyberspace!</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 20 Aug 2024 15:19:26 -0600</lastBuildDate>
+        <atom:link href="https://johnpearsall.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>🖥️ Gateway to Adulthood</title>
+            <link>https://johnpearsall.com/posts/ff-gateway-to-adulthood/</link>
+            <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
+            
+            <guid>https://johnpearsall.com/posts/ff-gateway-to-adulthood/</guid>
+            <description>Introduction The year was 1999 and the new millennium, full of promises and bluster, was quickly approaching. I was offered a most generous choice for my graduation. The choice of graduation gift was a car or a computer. Much to my family&amp;rsquo;s chagrin, I chose the computer. Thus began a great ocean of time spent on IRC, Usenet, online games - specifically MUDs and Ultima Online, and the young &amp;ldquo;world-wide web&amp;rdquo; just entering a clumsy adolescence.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The year was 1999 and the new millennium, full of promises and bluster, was
+quickly approaching. I was offered a most generous choice for my graduation.
+The choice of graduation gift was a car or a computer. Much to my family&rsquo;s
+chagrin, I chose the computer. Thus began a great ocean of time spent on IRC,
+Usenet, online games - specifically MUDs and Ultima Online, and the young
+&ldquo;world-wide web&rdquo; just entering a clumsy adolescence. Our journey would be
+taken together. Here is but a humble homage to those halcyon days.</p>
+<h2 id="the-hardware">The Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>Pentium III 450MHz</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>64MB</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>10GB</td>
+</tr>
+<tr>
+<td>2D/3D Graphics</td>
+<td>Voodoo 3 3000 AGP w/ 64MB video RAM</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Creative Sound Blaster 16</td>
+</tr>
+<tr>
+<td>Communications</td>
+<td>56K modem</td>
+</tr>
+</tbody>
+</table>
+<h2 id="does-it-boot">Does it Boot?</h2>
+<p>After taking a moment to check the nearly 25 year-old capacitors, the moment
+of truth has arrived. I press the power button feeling the <em>smoosh</em> of
+nostalgia. I am welcomed by the BIOS splash screen and the memory test. Alas,
+the familiar light blue screen with a boisterous &ldquo;Windows 98&rdquo; boot screen. A
+good start! The rapid staccato of chucka-chucka-chucka as the hard drive head
+sweeps across a magnetized platter. A most welcome chime resounds splendidly
+over my thrifted speakers. We have boot!</p>
+<h2 id="game-on">Game On!</h2>
+<p>I hit the realization that I cannot engage in a time-honored tradition. There
+is a game that has been ported to everything from toasters to refridgerators,
+that would be id Software&rsquo;s brilliant contribution aptly named DOOM. However,
+I did have my venerable copies of Quake and Duke Nukem 3D. I press the CD-ROM
+eject button with much aplomb. <em>Rrr rrr chonk</em>. Well that didn&rsquo;t go splendidly.
+I dig through my trove of thrifted goods and find a 52x drive and install it.
+Hoo boy, FPSes sure have evolved since then. After fumbling around and dying
+horribly with a huge grin on my face I decide to move onto the next step. That
+being getting this thing online!</p>
+<h2 id="nostalgia-online">Nostalgia Online?</h2>
+<p>I grab the wifi modem that I use with my Apple <em>II</em>e and attach it to the rat
+nest of serial cables, serial gender changers, and adapters. I try to dust off
+the dusty corner of my brain that holds DB9/DB25 pinouts and the nuances of
+DCE/DTE connections. After a couple of hours I&rsquo;m no closer to success. I&rsquo;m a
+bit too engaged to want to break out the oscilloscope so I wait a couple days
+for a compatible PCI wifi card to arrive. There is no native support for wifi
+in Windows 98 Second Edition so I have to use the native software. This means,
+for sake of convenience, using an insecure network. I do this over my phone as
+I live in a secluded area and it is for a brief period of time. Sorry fellow
+infosec engineers! It works! I immediately dial into the
+<a href="https://bbs.fozztexx.com/">Level 29</a> and <a href="http://20forbeers.com:1339/">20ForBeers</a>
+BBS. I lose the rest of the evening to catching up on messages and sneaking
+time into Legend of the Red Dragon and TradeWars 2002.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While I didn&rsquo;t meet all my goals, I&rsquo;ve definitely found room for improvement.
+I already have a list of hardware upgrades and haven&rsquo;t given up hope on the
+task of dial-up networking. Worst case, I&rsquo;ll dust off my RpISP and my phone
+line simulator and get it going via dial-up. My nostalgia itch has been
+scratched and I have a new toy to play with for my retro Fridays here-to now
+referred to as fRetro Friday.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

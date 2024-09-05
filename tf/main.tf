@@ -1,8 +1,8 @@
-module "s3-bucket_jpcom_website" {
+module "s3-bucket_johnpearsall-com" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "4.1.2"
 
-  bucket                   = "jpcom_website"
+  bucket                   = "johnpearsall.com"
   acl                      = "private"
   control_object_ownership = true
   object_ownership         = "ObjectWriter"

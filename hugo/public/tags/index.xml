@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Greetings from Cyberspace!</title>
+    <link>https://johnpearsall.com/tags/</link>
+    <description>Recent content in Tags on Greetings from Cyberspace!</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2024 15:19:26 -0600</lastBuildDate>
+    <atom:link href="https://johnpearsall.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fretrofriday</title>
+      <link>https://johnpearsall.com/tags/fretrofriday/</link>
+      <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
+      <guid>https://johnpearsall.com/tags/fretrofriday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hobbies</title>
+      <link>https://johnpearsall.com/tags/hobbies/</link>
+      <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
+      <guid>https://johnpearsall.com/tags/hobbies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retrocomputing</title>
+      <link>https://johnpearsall.com/tags/retrocomputing/</link>
+      <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
+      <guid>https://johnpearsall.com/tags/retrocomputing/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
