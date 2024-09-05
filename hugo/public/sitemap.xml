@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://johnpearsall.com/tags/automation/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/automation/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/career/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/career/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/gitops/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/gitops/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/</loc>
+    <loc>https://staging.johnpearsall.com:80/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/posts/</loc>
+    <loc>https://staging.johnpearsall.com:80/posts/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</loc>
+    <loc>https://staging.johnpearsall.com:80/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</loc>
     <lastmod>2024-09-04T19:14:38-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/fretrofriday/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/fretrofriday/</loc>
     <lastmod>2024-08-20T15:19:26-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/hobbies/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/hobbies/</loc>
     <lastmod>2024-08-20T15:19:26-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/tags/retrocomputing/</loc>
+    <loc>https://staging.johnpearsall.com:80/tags/retrocomputing/</loc>
     <lastmod>2024-08-20T15:19:26-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</loc>
+    <loc>https://staging.johnpearsall.com:80/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</loc>
     <lastmod>2024-08-20T15:19:26-06:00</lastmod>
   </url><url>
-    <loc>https://johnpearsall.com/blog/</loc>
+    <loc>https://staging.johnpearsall.com:80/blog/</loc>
   </url><url>
-    <loc>https://johnpearsall.com/series/</loc>
+    <loc>https://staging.johnpearsall.com:80/series/</loc>
   </url>
 </urlset>

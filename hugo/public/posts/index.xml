@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Greetings from Cyberspace!</title>
-        <link>https://johnpearsall.com/posts/</link>
+        <link>https://staging.johnpearsall.com:80/posts/</link>
         <description>Recent content in Posts on Greetings from Cyberspace!</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 04 Sep 2024 19:14:38 -0600</lastBuildDate>
-        <atom:link href="https://johnpearsall.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://staging.johnpearsall.com:80/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>🛠️ Dr Strangebuild Part 1</title>
-            <link>https://johnpearsall.com/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</link>
+            <link>https://staging.johnpearsall.com:80/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</link>
             <pubDate>Wed, 04 Sep 2024 19:14:38 -0600</pubDate>
             
-            <guid>https://johnpearsall.com/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</guid>
+            <guid>https://staging.johnpearsall.com:80/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</guid>
             <description>How I learned to stop worrying and love automation.</description>
             <content type="html"><![CDATA[<h1 id="dr-strangebuild">Dr. Strangebuild</h1>
 <blockquote>
@@ -177,10 +177,10 @@ file.</p>
         
         <item>
             <title>🖥️ Gateway to Adulthood</title>
-            <link>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</link>
+            <link>https://staging.johnpearsall.com:80/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</link>
             <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
             
-            <guid>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</guid>
+            <guid>https://staging.johnpearsall.com:80/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</guid>
             <description>Introduction The year was 1999 and the new millennium, full of promises and bluster, was quickly approaching. I was offered a most generous choice for my graduation. The choice of graduation gift was a car or a computer. Much to my family&amp;rsquo;s chagrin, I chose the computer. Thus began a great ocean of time spent on IRC, Usenet, online games - specifically MUDs and Ultima Online, and the young &amp;ldquo;world-wide web&amp;rdquo; just entering a clumsy adolescence.</description>
             <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The year was 1999 and the new millennium, full of promises and bluster, was

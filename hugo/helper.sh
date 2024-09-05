@@ -24,8 +24,6 @@ case "$1" in
 	  ${HUGO_EXEC} server -D --buildDrafts -b "https://${HUGO_DOMAIN_PROD}" --appendPort=false -p 80
 	  ;;
 	'deploy-dev')
-	  # grep -rq "${HUGO_DOMAIN_DEV}" public/*
-	  # if [[ $? -ne 0 ]]
 	  if ! grep -rq "${HUGO_DOMAIN_DEV}" public/*
 	  then
 	      echo "Hugo site is in prod mode, run \"$(basename $0) dev\" before deploying!"
@@ -34,8 +32,6 @@ case "$1" in
 	  ${HUGO_EXEC} deploy --target=staging
 	  ;;
 	'deploy-prod')
-	  # grep -rq "${HUGO_DOMAIN_DEV}" public/*
-	  # if [[ $? -eq 0 ]]
 	  if grep -rq "${HUGO_DOMAIN_DEV}" public/*
 	  then
 	      echo "Hugo site is in dev mode, run \"$(basename $0) prod\" before deploying!"
