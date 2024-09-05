@@ -33,6 +33,12 @@ title = "Greetings from Cyberspace!"
     "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
   ]
 
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:year/:month/:slug'
+  [permalinks.section]
+    posts = '/posts'
+
 [taxonomies]
   category = "blog"
   tag = "tags"

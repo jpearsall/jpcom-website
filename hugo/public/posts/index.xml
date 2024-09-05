@@ -5,15 +5,182 @@
         <description>Recent content in Posts on Greetings from Cyberspace!</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 20 Aug 2024 15:19:26 -0600</lastBuildDate>
+        <lastBuildDate>Wed, 04 Sep 2024 19:14:38 -0600</lastBuildDate>
         <atom:link href="https://johnpearsall.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>🛠️ Dr Strangebuild Part 1</title>
+            <link>https://johnpearsall.com/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</link>
+            <pubDate>Wed, 04 Sep 2024 19:14:38 -0600</pubDate>
+            
+            <guid>https://johnpearsall.com/posts/2024/09/%EF%B8%8F-dr-strangebuild-part-1/</guid>
+            <description>How I learned to stop worrying and love automation.</description>
+            <content type="html"><![CDATA[<h1 id="dr-strangebuild">Dr. Strangebuild</h1>
+<blockquote>
+<p>How I learned to stop worrying and love automation.</p>
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>Few things induce a Shrek-esque incredulity quite like having to deal with
+proprietary file formats. This is especially frustrating when I am trying to
+quantify my achievements in a resume. Markdown is Good Enough™ for many
+purposes and I was absolutely certain that it would serve me well here as well.</p>
+<h2 id="workflow">Workflow</h2>
+<h3 id="create-your-resume">Create Your Resume</h3>
+<p>For application hints of this consult <a href="#Resume">Examples/Resume</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Element Equivalent</th>
+<th>Resume Element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heading Level 1</td>
+<td>Name at the top</td>
+</tr>
+<tr>
+<td>Heading Level 3</td>
+<td>Section headers</td>
+</tr>
+<tr>
+<td>Heading Level 4</td>
+<td>Communication links</td>
+</tr>
+<tr>
+<td>Heading Level 5</td>
+<td>Job header</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Introduction, job description</td>
+</tr>
+<tr>
+<td>Unordered List</td>
+<td>Job accomplishments</td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-to-desired-formats">Convert to Desired Formats</h3>
+<p>For hints on the automated build process, consult <a href="#Build">Examples/Build</a></p>
+<p>Our build process uses <a href="https://github.com/jgm/pandoc/">Pandoc</a> and <a href="https://github.com/wkhtmltopdf/wkhtmltopdf">wkhtmltopdf</a>
+to convert from Markdown to HTML (via pandoc) and HTML (via wkhtmltopdf). You
+can optionally convert to a Microsoft Word document via pandoc although that
+is beyond the scope of this post. Please consult with the <a href="https://github.com/sdsawtelle/markdown-resume">reference repo</a>
+for more information.</p>
+<p>Assuming you have named your resume <code>resume.md</code> and the stylesheet as
+<code>resume-styling.css</code> you can do the conversions via the GNU/Linux command-line
+via the following. This assumes that both Pandoc and wkhtmltopdf are installed.</p>
+<p>⚠️ Note that the HTML document is required to convert to PDF, although you
+could likely use pipes and input redirection to not require an intermediate
+file.</p>
+<p>⚠️ The <code>resume-styling.css</code> needs to be in the same directory as the generated
+<code>resume.html</code> for conversion to PDF to work properly.</p>
+<p><strong>Convert to HTML</strong></p>
+<p><code>pandoc --css=resume-styling.css -s -f markdown+smart -o resume.html resume.md</code></p>
+<p><strong>Convert to PDF</strong></p>
+<p><code>wkhtmltopdf --enable-local-file-access resume.html resume.pdf</code></p>
+<h2 id="examples">Examples</h2>
+<h3 id="resume">Resume</h3>
+<p>For example purposes this is named <code>readme.md</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Sanguine Strangebuild, PhD
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### **[me@strangebuild.de](mailto:me@strangebuild.de)** – **[+49 30-23125000](tel:+493023125000)**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Leveraging GitOps and automated build workflows to prevent armageddon.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### PROFESSIONAL EXPERIENCE
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##### Automation Wizard – Cyberspace – Internet Land – 2024 to Present
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Found ways to free frustrated contributors from the rigor of manual process.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Automated workflows to process a Markdown resume into open and proprietary formats.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Consumed a prodigious amount of Obstler Schnapps.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### ADDITIONAL EXPERIENCE
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##### Automation Padawan – Galactic Empire – Imperial City, Coruscant – 2000 to 2024
+</span></span></span></code></pre></div><h3 id="build">Build</h3>
+<p>⚠️ Note that I use <a href="https://www.drone.io/">Drone CI</a> as my CI tool.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">pipeline</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#ae81ff">kubernetes</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">build</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">ghcr.io/surnet/alpine-wkhtmltopdf:3.19.0-0.12.6-full</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">commands</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">apk add --no-cache pandoc</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">mkdir target</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">pandoc --css=resume-styling.css -s -f markdown+smart -o target/resume.html resume.md</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">cp resume-testing.css target/</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">wkhtmltopdf --enable-local-file-access target/resume.html target/resume.pdf</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">publish</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">plugins/gitea-release</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">DRONE_REPO_OWNER</span>: <span style="color:#ae81ff">itsmejwp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">settings</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">api_key</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">from_secret</span>: <span style="color:#ae81ff">GITEA_API_KEY</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">base_url</span>: <span style="color:#ae81ff">https://my.local.git.host.example</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">files</span>: <span style="color:#ae81ff">target/*</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">draft</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">title</span>: <span style="color:#ae81ff">${DRONE_COMMIT_SHA:0:8}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">when</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">event</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">tag</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">depends_on</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">build</span>
+</span></span></code></pre></div><h3 id="stylesheet">Stylesheet</h3>
+<p>For example purposes this is named <code>resume-styling.css</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* name at the top */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Arial, Helvetica, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#444</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* section headers */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Arial, Helvetica, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">dashed</span> <span style="color:#ae81ff">#444</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* communication links */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h4</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Times New Roman&#34;</span>, Times, <span style="color:#66d9ef">serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">-1</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* job header */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h5</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Arial, Helvetica, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bold</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.1</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="references">References</h2>
+<ul>
+<li><a href="https://sdsawtelle.github.io/blog/output/simple-markdown-resume-with-pandoc-and-wkhtmltopdf.html">The Simplest Markdown Resume Workflow</a></li>
+<li><a href="https://mszep.github.io/pandoc_resume/">The Markdown Resume</a></li>
+<li><a href="https://github.com/necolas/normalize.css">normalize.css</a></li>
+<li><a href="https://github.com/surnet/docker-wkhtmltopdf/pkgs/container/alpine-wkhtmltopdf">alpine-wkhtmltopdf container</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
             <title>🖥️ Gateway to Adulthood</title>
-            <link>https://johnpearsall.com/posts/ff-gateway-to-adulthood/</link>
+            <link>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</link>
             <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
             
-            <guid>https://johnpearsall.com/posts/ff-gateway-to-adulthood/</guid>
+            <guid>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</guid>
             <description>Introduction The year was 1999 and the new millennium, full of promises and bluster, was quickly approaching. I was offered a most generous choice for my graduation. The choice of graduation gift was a car or a computer. Much to my family&amp;rsquo;s chagrin, I chose the computer. Thus began a great ocean of time spent on IRC, Usenet, online games - specifically MUDs and Ultima Online, and the young &amp;ldquo;world-wide web&amp;rdquo; just entering a clumsy adolescence.</description>
             <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The year was 1999 and the new millennium, full of promises and bluster, was
