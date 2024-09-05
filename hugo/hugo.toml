@@ -12,7 +12,7 @@ title = "Greetings from Cyberspace!"
   homeSubtitle = "Technologist. Pragmatist. Dreamer."
   disableReadOtherPosts = false
   enableSharingButtons = true
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
   enableThemeToggle = true
 
   description = "Personal and professional insights and anecdotes."
@@ -44,10 +44,22 @@ title = "Greetings from Cyberspace!"
   tag = "tags"
   series = "series"
 
-[[menu.main]]
-  identifier = "blog"
-  name = "blog"
-  url = "/posts"
+[menus]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/posts"
+    weight = 20
+  [[menu.main]]
+    identifier = "rss"
+    name = "rss"
+    url = "/posts/index.xml"
+    weight = 30
 
 [deployment]
 [[deployment.targets]]
