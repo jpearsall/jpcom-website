@@ -19,7 +19,8 @@ module "s3-bucket_johnpearsall-com" {
     enabled = true
   }
 
-  policy = jsonencode(
+  attach_policy = true
+  policy        = jsonencode(
       {
           Statement = [
               {
