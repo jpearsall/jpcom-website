@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Retrocomputing on Greetings from Cyberspace!</title>
-    <link>https://staging.johnpearsall.com:80/tags/retrocomputing/</link>
+    <link>https://johnpearsall.com/tags/retrocomputing/</link>
     <description>Recent content in Retrocomputing on Greetings from Cyberspace!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2024 15:19:26 -0600</lastBuildDate>
-    <atom:link href="https://staging.johnpearsall.com:80/tags/retrocomputing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://johnpearsall.com/tags/retrocomputing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🖥️ Gateway to Adulthood</title>
-      <link>https://staging.johnpearsall.com:80/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</link>
+      <link>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</link>
       <pubDate>Tue, 20 Aug 2024 15:19:26 -0600</pubDate>
-      <guid>https://staging.johnpearsall.com:80/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</guid>
+      <guid>https://johnpearsall.com/posts/2024/08/%EF%B8%8F-gateway-to-adulthood/</guid>
       <description>Introduction The year was 1999 and the new millennium, full of promises and bluster, was quickly approaching. I was offered a most generous choice for my graduation. The choice of graduation gift was a car or a computer. Much to my family&amp;rsquo;s chagrin, I chose the computer. Thus began a great ocean of time spent on IRC, Usenet, online games - specifically MUDs and Ultima Online, and the young &amp;ldquo;world-wide web&amp;rdquo; just entering a clumsy adolescence.</description>
     </item>
   </channel>
