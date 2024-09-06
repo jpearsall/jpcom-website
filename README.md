@@ -91,6 +91,8 @@ Project scope:
 
 Hugo is required to build the static website. We are managing Terraform via tfenv which manages Terraform environments similarly to rbenv.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Prerequisites
 
 Follow the linked installation instructions under each tool.
@@ -99,6 +101,8 @@ Follow the linked installation instructions under each tool.
   * Follow the Hugo [installation](https://gohugo.io/installation/) guide for your OS.
 * tfenv
   * Follow the [installation](https://github.com/tfutils/tfenv?tab=readme-ov-file#installation) directions from the project's README.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Configuration
 
