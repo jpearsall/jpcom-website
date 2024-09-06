@@ -69,7 +69,7 @@
 <a id="about-the-project"></a>
 ## About The Project
 
-This repository is for the Terraform configuration of the [johnpearsall.com](johnpearsall.com) website.
+This repository is for the Terraform configuration of the [johnpearsall.com](https://johnpearsall.com) website.
 
 Project scope:
 * Core elements such as the domain, TLS certificates, and DNS are delegated to the [jpcom-infrastructure](https://github.com/jpearsall/jpcom-infrastructure) repo.
@@ -183,9 +183,10 @@ Project Link: [https://github.com/jpearsall/jpcom-website](https://github.com/jp
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Inspired by [jscom-blog](https://github.com/johnsosoka/jscom-blog) by @johnsosoka
+* Inspired by [jscom-blog](https://github.com/johnsosoka/jscom-blog) by [@johnsosoka](https://github.com/johnsosoka)
 * Badges provided by [Shields.io](https://shields.io) (We **do** need no stinkin' badges!)
 * The lovely [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/) theme for Hugo.
+* Shoutout to [@draik](https://github.com/draik) for testing!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
