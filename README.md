@@ -1,6 +1,7 @@
 <!-- Template kindly borrowed from https://github.com/othneildrew/Best-README-Template -->
 <a id="readme-top"></a>
 
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -16,6 +17,7 @@
 [![GPL-3.0 License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -30,7 +32,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#configuration">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -42,11 +44,12 @@
   </ol>
 </details>
 
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/jpearsall/jpcom-website">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="398" height="313">
   </a>
 
 <h3 align="center">jpcom-website</h3>
@@ -60,6 +63,7 @@
     <a href="https://github.com/jpearsall/jpcom-website/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
+
 
 <!-- ABOUT THE PROJECT -->
 <a id="about-the-project"></a>
@@ -76,67 +80,57 @@ Project scope:
 ### Built With
 
 * [![Terraform][Terraform]][Terraform-url]
+* [![tfenv][Tfenv]][Tfenv-url]
 * [![Hugo][Hugo]][Hugo-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Hugo is required to build the static website. We are managing Terraform via tfenv which manages Terraform environments similarly to rbenv.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Follow the linked installation instructions under each tool.
+
+* Hugo
   * Follow the Hugo [installation](https://gohugo.io/installation/) guide for your OS.
+* tfenv
+  * Follow the [installation](https://github.com/tfutils/tfenv?tab=readme-ov-file#installation) directions from the project's README.
 
-### Installation
+### Configuration
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+- Follow Hugo's documentation to [Configure Hugo](https://gohugo.io/getting-started/configuration/)
+   - Many of the fields are fairly self-explanatory. Here is a description of some of the more cryptic options.
+      - `enableThemeToggle`: Setting this to true will enable a toggle for light/dark/system mode if your theme supports it.
+      - `[taxonomies]`: Taxonomies are ways of grouping your content. I would refer to the [documentation](https://gohugo.io/content-management/taxonomies/). 
+- The `tfenv` tool will manage Terraform versions for you.
+   - Just make sure your `tf/.terraform-version` matches the `tf/required_version` defined in `tf/providers.tf`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+⚠️ This section is under construction until I can resolve a few issues.
+* [ ] Create [jpcom-infrastructure](https://github.com/jpearsall/jpcom-infrastructure) repository and pull resources from the module outputs.
+* [ ] Convert some of the hardcoded values such as domain names, etc. to Terraform variables.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Create tests for Hugo
+- [ ] Create tests for Terraform
+- [ ] Research multiple image display options.
+    - [ ] Implement image display options.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/jpearsall/jpcom-website/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,8 +154,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/jpearsall/jpcom-website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jpearsall/jpcom-website" alt="contrib.rocks image" />
 </a>
 
 
@@ -169,7 +163,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,9 +172,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+John Pearsall - [@notoriousjwp](https://twitter.com/notoriousjwp) - [jwp@johnpearsall.com](mailto:jwp@johnpearsall.com)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/jpearsall/jpcom-website](https://github.com/jpearsall/jpcom-website)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,9 +183,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* Inspired by [jscom-blog](https://github.com/johnsosoka/jscom-blog) by @johnsosoka
+* Badges provided by [Shields.io](https://shields.io) (We **do** need no stinkin' badges!)
+* The lovely [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/) theme for Hugo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,5 +206,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 [Terraform]: https://img.shields.io/badge/terraform-7b42bc?style=for-the-badge&logo=terraform&logoColor=white
 [Terraform-url]: https://terraform.io/
-[Hugo]: https://img.shields.io/badge/hugo-33ba91?style=for-the-badge&logo=hugo&logoColor=white
+[Tfenv]: https://img.shields.io/badge/tfenv-000000?style=for-the-badge&logo=github&logoColor=white
+[Tfenv-url]: https://github.com/tfutils/tfenv
+[Hugo]: https://img.shields.io/badge/hugo-00875d?style=for-the-badge&logo=hugo&logoColor=white
 [Hugo-url]: https://gohugo.io/
